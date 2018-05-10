@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { View, Text } from 'react-native';
 
-import { FetchCoinData } from '../actions/FetchCoinData';
+import FetchCoinData from '../Actions/FetchCoinData';
 
 class CryptoContainer extends Component {
 
