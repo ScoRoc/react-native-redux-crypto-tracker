@@ -18,7 +18,6 @@ class CryptoContainer extends Component {
 
   render() {
     const { crypto } = this.props;
-
     return (
       <View>
         {this.renderCoinCards()}
