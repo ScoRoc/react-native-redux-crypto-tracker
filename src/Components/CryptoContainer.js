@@ -14,6 +14,16 @@ class CryptoContainer extends Component {
   renderCoinCards() {
     const { crypto } = this.props;
     console.log(crypto);
+    return crypto.data.map((coin, index) => {
+      <CoinCard
+        key={index}
+        coin_name={coin.name}
+        symbol={coin.symbol}
+        price_usd={coin.price_usd}
+        percent_change_24h={coin.percent_change_24h}
+        percent_change_7d={coin.percent_change_7d}
+      />
+    })
   }
 
   render() {
