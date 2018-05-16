@@ -28,6 +28,7 @@ class CryptoContainer extends Component {
 
   render() {
     const { crypto } = this.props;
+    const { contentContainer } = styles;
     if (crypto.isFetching) {
       return (
         <View>
@@ -42,10 +43,17 @@ class CryptoContainer extends Component {
     }
 
     return (
-      <View>
+      <ScrollView contentContainerStyle={contentContainer}>
         {this.renderCoinCards()}
-      </View>
+      </ScrollView>
     )
+  }
+}
+
+const styles = {
+  contentContainer: {
+    paddingBottom: 100,
+    paddingTop: 55
   }
 }
 
