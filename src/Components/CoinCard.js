@@ -27,14 +27,14 @@ const styles = StyleSheet.create({
     marginRight: 20
   },
   seperator: {
-    marginTop: 10,
+    marginTop: 10
   },
   coinPrice: {
     marginTop: 10,
     marginLeft: 'auto',
     marginRight: 10,
     fontWeight: 'bold'
-  }
+  },
   image: {
     width: 35,
     height: 35
@@ -62,7 +62,8 @@ const styles = StyleSheet.create({
   }
 });
 
-const { container, image, bold } = styles;
+const { container, image, moneySymbol, upperRow, coinSymbol, coinName, coinPrice,
+  statisticsContainer, seperator, percentChangePlus, percentChangeMinus } = styles;
 
 const CoinCard = ({ symbol, coin_name, price_usd, percent_change_24h, percent_change_7d }) => {
   return (
